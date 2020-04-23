@@ -1,12 +1,27 @@
 var cognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
 
-var newcogn = cognomi.push(prompt('Inserisci cognome'));
+cognomi.push(newcogn);
 
+var newcogn = prompt('Inserisci cognome')
+
+var newItem = '';
 
 cognomi.sort();
 
 console.log(cognomi.length);
 console.log(cognomi);
-const  index = cognomi.indexOf(newcogn);
+
+
+
+for (var i = 0; i < cognomi.length; i++) {
+
+  newItem += '<li>' + cognomi[i] + '</li>';
+
+
+}
+
+ var index = cognomi.indexOf(newcogn);
 
 console.log(index);
+console.log(newItem);
+console.log(newCogn);
